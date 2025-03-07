@@ -17,47 +17,35 @@ import java.sql.Timestamp;
 /**
  * @Package: nhanph.proton.enroll.entity
  * @author: nhanph
- * @date: 3/6/2025 2025
+ * @date: 3/7/2025 2025
  * @Copyright: @nhanph
  */
 
-
-import lombok.Data;
-
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "camera")
-public class Camera {
+@Table(name = "config")
+public class Config {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "camera_id")
-    private Long cameraId;
+    private Long id;
 
-    @Column(name = "camera_name")
-    private String cameraName;
+    @Column(nullable = false)
+    private String code;
 
-    @Column(name = "camera_description")
-    private String cameraDescription;
-
-    private String link;
-
-    @Column(name = "created_time")
-    private Timestamp createdTime;
-
+    @Column(nullable = false)
+    private String type;
+    private String name;
+    private String description;
+    private String value;
     private Byte status;
 
-    private Double positionX;
+    @Column(name = "inserted_time")
+    private Timestamp insertedTime;
 
-    private Double positionY;
-
-    @Column(name = "camera_group")
-    private String cameraGroup;
-
-    @Column(name = "face_source")
-    private String faceSource;
-
-    private String cam3d;
+    @Column(name = "order_no")
+    private Integer orderNo;
 }

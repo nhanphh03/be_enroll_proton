@@ -20,44 +20,34 @@ import java.sql.Timestamp;
  * @date: 3/6/2025 2025
  * @Copyright: @nhanph
  */
-
-
-import lombok.Data;
-
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "camera")
-public class Camera {
+@Table(name = "groups")
+public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "camera_id")
-    private Long cameraId;
+    @Column(name = "group_id")
+    private Long groupId;
 
-    @Column(name = "camera_name")
-    private String cameraName;
+    @Column(name = "group_code")
+    private String groupCode;
 
-    @Column(name = "camera_description")
-    private String cameraDescription;
+    @Column(name = "group_name")
+    private String groupName;
 
-    private String link;
+    @Column(name = "group_description")
+    private String groupDescription;
 
-    @Column(name = "created_time")
-    private Timestamp createdTime;
+    @Column(name = "created_date")
+    private Timestamp createdDate;
 
+    @Column(name = "created_by")
+    private String createdBy;
+
+    @Column(name = "status")
     private Byte status;
-
-    private Double positionX;
-
-    private Double positionY;
-
-    @Column(name = "camera_group")
-    private String cameraGroup;
-
-    @Column(name = "face_source")
-    private String faceSource;
-
-    private String cam3d;
 }
