@@ -24,9 +24,6 @@ minio.bucketName=face-enroll-proton
 minio.contentType=image/jpg
 
 
-#Token
-app.auth.token=dwKddrv9HhHMU0ylpsxpuoZPMkr6KaxDWORJPmss
-
 url_face_image=https://s3.protontech.vn/face-enroll-proton/
 max_data_size=300
 day_off_set=60

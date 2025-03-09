@@ -1,0 +1,9 @@
+package nhanph.proton.enroll.mapper;
+
+import nhanph.proton.enroll.entity.CapturedImage;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CapturedImageRepository extends JpaRepository<CapturedImage, Long> {
+}

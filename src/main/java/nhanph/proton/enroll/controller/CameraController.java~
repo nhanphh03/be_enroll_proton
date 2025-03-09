@@ -1,6 +1,5 @@
 package nhanph.proton.enroll.controller;
 
-import lombok.RequiredArgsConstructor;
 import nhanph.proton.enroll.dto.CameraResponse;
 import nhanph.proton.enroll.service.CameraService;
 import org.springframework.http.ResponseEntity;
@@ -19,10 +18,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping({"/api/camera"})
-@RequiredArgsConstructor
 public class CameraController {
 
     private final CameraService cameraService;
+    public CameraController (CameraService cameraService){
+        this.cameraService = cameraService;
+    }
 
     @GetMapping({"/getAll"})
     public ResponseEntity<List<CameraResponse>> getCameraList() {

@@ -1,20 +1,43 @@
-2025-03-07T17:22:58.034+07:00  INFO 25680 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : Starting EnrollApplication using Java 17.0.13 with PID 25680 (N:\Git Nhan Pham\be_enroll_proton\target\classes started by nhanph in N:\Git Nhan Pham\be_enroll_proton)
-2025-03-07T17:22:58.035+07:00  INFO 25680 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-03-07T17:22:58.382+07:00  INFO 25680 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-07T17:22:58.417+07:00  INFO 25680 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
-2025-03-07T17:22:58.690+07:00  INFO 25680 --- [enroll] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-07T17:22:58.696+07:00  INFO 25680 --- [enroll] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-07T17:22:58.696+07:00  INFO 25680 --- [enroll] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-07T17:22:58.724+07:00  INFO 25680 --- [enroll] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-07T17:22:58.724+07:00  INFO 25680 --- [enroll] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 665 ms
-2025-03-07T17:22:58.807+07:00  INFO 25680 --- [enroll] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-07T17:22:58.834+07:00  INFO 25680 --- [enroll] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-07T17:22:58.860+07:00  INFO 25680 --- [enroll] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-07T17:22:59.029+07:00  INFO 25680 --- [enroll] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-07T17:22:59.048+07:00  INFO 25680 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-07T17:22:59.100+07:00  INFO 25680 --- [enroll] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@559fd5ec
-2025-03-07T17:22:59.101+07:00  INFO 25680 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-07T17:22:59.140+07:00  INFO 25680 --- [enroll] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-09T10:23:51.186+07:00  WARN 13480 --- [enroll] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08000
+2025-03-09T10:23:51.251+07:00 ERROR 13480 --- [enroll] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30023ms (total=0, active=0, idle=0, waiting=0)
+2025-03-09T10:23:51.252+07:00  WARN 13480 --- [enroll] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: -1, SQLState: 08000
+2025-03-09T10:23:51.252+07:00 ERROR 13480 --- [enroll] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Could not connect to address=(host=localhost)(port=3306)(type=primary) : Read timed out
+2025-03-09T10:23:51.592+07:00 ERROR 13480 --- [enroll] [http-nio-8080-exec-5] n.p.e.s.impl.CapturedImageServiceImpl    : Failed to fetch captured images: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 30023ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+2025-03-09T10:24:20.571+07:00  INFO 13480 --- [enroll] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-09T10:24:22.455+07:00  INFO 13480 --- [enroll] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-09T10:24:22.497+07:00  INFO 13480 --- [enroll] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-09T10:24:22.529+07:00  INFO 13480 --- [enroll] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T10:25:26.757+07:00  INFO 19832 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : Starting EnrollApplication using Java 17.0.12 with PID 19832 (N:\be_enroll_proton\target\classes started by nhanph in N:\be_enroll_proton)
+2025-03-09T10:25:26.763+07:00  INFO 19832 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-03-09T10:25:29.874+07:00  INFO 19832 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-09T10:25:30.087+07:00  INFO 19832 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181 ms. Found 2 JPA repository interfaces.
+2025-03-09T10:25:31.588+07:00  INFO 19832 --- [enroll] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-09T10:25:31.629+07:00  INFO 19832 --- [enroll] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-09T10:25:31.630+07:00  INFO 19832 --- [enroll] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-09T10:25:31.810+07:00  INFO 19832 --- [enroll] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-09T10:25:31.810+07:00  INFO 19832 --- [enroll] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4877 ms
+2025-03-09T10:25:32.207+07:00  INFO 19832 --- [enroll] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-09T10:25:32.377+07:00  INFO 19832 --- [enroll] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-09T10:25:32.569+07:00  INFO 19832 --- [enroll] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-09T10:25:33.606+07:00  INFO 19832 --- [enroll] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-09T10:25:33.726+07:00  INFO 19832 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T10:45:35.595+07:00  INFO 6288 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : Starting EnrollApplication using Java 17.0.12 with PID 6288 (N:\be_enroll_proton\target\classes started by nhanph in N:\be_enroll_proton)
+2025-03-09T10:45:35.601+07:00  INFO 6288 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-03-09T10:45:37.832+07:00  INFO 6288 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-09T10:45:37.979+07:00  INFO 6288 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 2 JPA repository interfaces.
+2025-03-09T10:45:38.745+07:00  INFO 6288 --- [enroll] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-09T10:45:38.764+07:00  INFO 6288 --- [enroll] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-09T10:45:38.764+07:00  INFO 6288 --- [enroll] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-09T10:45:38.835+07:00  INFO 6288 --- [enroll] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-09T10:45:38.836+07:00  INFO 6288 --- [enroll] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3153 ms
+2025-03-09T10:45:39.064+07:00  INFO 6288 --- [enroll] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-09T10:45:39.172+07:00  INFO 6288 --- [enroll] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-09T10:45:39.231+07:00  INFO 6288 --- [enroll] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-09T10:45:39.658+07:00  INFO 6288 --- [enroll] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-09T10:45:39.693+07:00  INFO 6288 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T10:45:39.801+07:00  INFO 6288 --- [enroll] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6cbdd1c5
+2025-03-09T10:45:39.803+07:00  INFO 6288 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-09T10:45:39.892+07:00  INFO 6288 --- [enroll] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 11.7.2
@@ -22,145 +45,13 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-03-07T17:22:59.728+07:00  INFO 25680 --- [enroll] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-07T17:22:59.730+07:00  INFO 25680 --- [enroll] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-07T17:22:59.846+07:00  WARN 25680 --- [enroll] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cameraController' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\controller\CameraController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cameraServiceImpl' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\service\impl\CameraServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'nhanph.proton.enroll.mapper.CameraMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-03-07T17:22:59.846+07:00  INFO 25680 --- [enroll] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-07T17:22:59.848+07:00  INFO 25680 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-07T17:22:59.865+07:00  INFO 25680 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-07T17:22:59.867+07:00  INFO 25680 --- [enroll] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-03-07T17:22:59.873+07:00  INFO 25680 --- [enroll] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-03-07T17:22:59.885+07:00 ERROR 25680 --- [enroll] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 1 of constructor in nhanph.proton.enroll.service.impl.CameraServiceImpl required a bean of type 'nhanph.proton.enroll.mapper.CameraMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'nhanph.proton.enroll.mapper.CameraMapper' in your configuration.
-
-2025-03-07T17:23:48.995+07:00  INFO 16816 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : Starting EnrollApplication using Java 17.0.13 with PID 16816 (N:\Git Nhan Pham\be_enroll_proton\target\classes started by nhanph in N:\Git Nhan Pham\be_enroll_proton)
-2025-03-07T17:23:48.998+07:00  INFO 16816 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-03-07T17:23:49.354+07:00  INFO 16816 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-07T17:23:49.389+07:00  INFO 16816 --- [enroll] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
-2025-03-07T17:23:49.672+07:00  INFO 16816 --- [enroll] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-07T17:23:49.679+07:00  INFO 16816 --- [enroll] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-07T17:23:49.679+07:00  INFO 16816 --- [enroll] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-07T17:23:49.710+07:00  INFO 16816 --- [enroll] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-07T17:23:49.710+07:00  INFO 16816 --- [enroll] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 688 ms
-2025-03-07T17:23:49.792+07:00  INFO 16816 --- [enroll] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-07T17:23:49.822+07:00  INFO 16816 --- [enroll] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-07T17:23:49.848+07:00  INFO 16816 --- [enroll] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-07T17:23:50.022+07:00  INFO 16816 --- [enroll] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-07T17:23:50.041+07:00  INFO 16816 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-07T17:23:50.094+07:00  INFO 16816 --- [enroll] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@10b67f54
-2025-03-07T17:23:50.096+07:00  INFO 16816 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-07T17:23:50.131+07:00  INFO 16816 --- [enroll] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.7.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-03-07T17:23:50.728+07:00  INFO 16816 --- [enroll] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-07T17:23:50.731+07:00  INFO 16816 --- [enroll] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-07T17:23:50.847+07:00  WARN 16816 --- [enroll] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cameraController' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\controller\CameraController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cameraServiceImpl' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\service\impl\CameraServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'cameraMapper' defined in class path resource [nhanph/proton/enroll/config/MapperConfig.class]: Failed to instantiate [nhanph.proton.enroll.mapper.CameraMapper]: Factory method 'cameraMapper' threw exception with message: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-2025-03-07T17:23:50.847+07:00  INFO 16816 --- [enroll] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-07T17:23:50.849+07:00  INFO 16816 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-07T17:23:50.858+07:00  INFO 16816 --- [enroll] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-07T17:23:50.862+07:00  INFO 16816 --- [enroll] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-03-07T17:23:50.875+07:00  INFO 16816 --- [enroll] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-03-07T17:23:50.884+07:00 ERROR 16816 --- [enroll] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cameraController' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\controller\CameraController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cameraServiceImpl' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\service\impl\CameraServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'cameraMapper' defined in class path resource [nhanph/proton/enroll/config/MapperConfig.class]: Failed to instantiate [nhanph.proton.enroll.mapper.CameraMapper]: Factory method 'cameraMapper' threw exception with message: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
-	at nhanph.proton.enroll.EnrollApplication.main(EnrollApplication.java:11) ~[classes/:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cameraServiceImpl' defined in file [N:\Git Nhan Pham\be_enroll_proton\target\classes\nhanph\proton\enroll\service\impl\CameraServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'cameraMapper' defined in class path resource [nhanph/proton/enroll/config/MapperConfig.class]: Failed to instantiate [nhanph.proton.enroll.mapper.CameraMapper]: Factory method 'cameraMapper' threw exception with message: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
-	... 21 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cameraMapper' defined in class path resource [nhanph/proton/enroll/config/MapperConfig.class]: Failed to instantiate [nhanph.proton.enroll.mapper.CameraMapper]: Factory method 'cameraMapper' threw exception with message: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
-	... 35 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [nhanph.proton.enroll.mapper.CameraMapper]: Factory method 'cameraMapper' threw exception with message: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.3.jar:6.2.3]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.3.jar:6.2.3]
-	... 48 common frames omitted
-Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:61) ~[mapstruct-1.5.5.Final.jar:na]
-	at nhanph.proton.enroll.config.MapperConfig.cameraMapper(MapperConfig.java:18) ~[classes/:na]
-	at nhanph.proton.enroll.config.MapperConfig$$SpringCGLIB$$0.CGLIB$cameraMapper$0(<generated>) ~[classes/:na]
-	at nhanph.proton.enroll.config.MapperConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.3.jar:6.2.3]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:372) ~[spring-context-6.2.3.jar:6.2.3]
-	at nhanph.proton.enroll.config.MapperConfig$$SpringCGLIB$$0.cameraMapper(<generated>) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.3.jar:6.2.3]
-	... 51 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find implementation for nhanph.proton.enroll.mapper.CameraMapper
-	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:75) ~[mapstruct-1.5.5.Final.jar:na]
-	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:58) ~[mapstruct-1.5.5.Final.jar:na]
-	... 62 common frames omitted
-
+2025-03-09T10:45:41.141+07:00  INFO 6288 --- [enroll] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-09T10:45:41.145+07:00  INFO 6288 --- [enroll] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-09T10:45:41.564+07:00  INFO 6288 --- [enroll] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-09T10:45:42.625+07:00  WARN 6288 --- [enroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-09T10:45:43.179+07:00  INFO 6288 --- [enroll] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-09T10:45:43.192+07:00  INFO 6288 --- [enroll] [main] nhanph.proton.enroll.EnrollApplication   : Started EnrollApplication in 9.052 seconds (process running for 13.434)
+2025-03-09T10:47:18.281+07:00  INFO 6288 --- [enroll] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-09T10:47:18.282+07:00  INFO 6288 --- [enroll] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-09T10:47:18.287+07:00  INFO 6288 --- [enroll] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-09T10:47:53.340+07:00  INFO 6288 --- [enroll] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

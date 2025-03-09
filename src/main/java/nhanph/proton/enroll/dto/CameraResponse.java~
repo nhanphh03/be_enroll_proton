@@ -1,0 +1,101 @@
+package nhanph.proton.enroll.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+/**
+ * @Package: nhanph.proton.enroll.dto
+ * {@code @author:} nhanph
+ * {@code @date:} 3/7/2025 2025
+ * {@code @Copyright:} @nhanph
+ */
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class CameraResponse {
+    private String name;
+    private String rtspURL;
+    private String cameraId;
+    private String description;
+    private double positionX;
+    private double positionY;
+    private String faceSource;
+    private String cam3d;
+    @JsonProperty(value = "camera_group")
+    private String cameraGroup;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRtspURL() {
+        return rtspURL;
+    }
+
+    public void setRtspURL(String rtspURL) {
+        this.rtspURL = rtspURL;
+    }
+
+    public String getCameraId() {
+        return cameraId;
+    }
+
+    public void setCameraId(String cameraId) {
+        this.cameraId = cameraId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPositionX() {
+        return positionX;
+    }
+
+    public void setPositionX(double positionX) {
+        this.positionX = positionX;
+    }
+
+    public double getPositionY() {
+        return positionY;
+    }
+
+    public void setPositionY(double positionY) {
+        this.positionY = positionY;
+    }
+
+    public String getFaceSource() {
+        return faceSource;
+    }
+
+    public void setFaceSource(String faceSource) {
+        this.faceSource = faceSource;
+    }
+
+    public String getCam3d() {
+        return cam3d;
+    }
+
+    public void setCam3d(String cam3d) {
+        this.cam3d = cam3d;
+    }
+
+    public String getCameraGroup() {
+        return cameraGroup;
+    }
+
+    public void setCameraGroup(String cameraGroup) {
+        this.cameraGroup = cameraGroup;
+    }
+}

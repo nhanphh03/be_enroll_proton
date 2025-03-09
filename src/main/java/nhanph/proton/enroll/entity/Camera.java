@@ -6,25 +6,19 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.sql.Timestamp;
 
 /**
  * @Package: nhanph.proton.enroll.entity
- * @author: nhanph
- * @date: 3/6/2025 2025
- * @Copyright: @nhanph
+ * {@code @author:} nhanph
+ * {@code @date:} 3/6/2025 2025
+ * {@code @Copyright:} @nhanph
  */
 
-
-import lombok.Data;
-
-@Data
+@Setter
+@Getter
 @Entity
 @Builder
 @NoArgsConstructor
@@ -60,4 +54,5 @@ public class Camera {
     private String faceSource;
 
     private String cam3d;
+
 }

@@ -1,18 +1,17 @@
 package nhanph.proton.enroll.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 /**
  * @Package: nhanph.proton.enroll.dto
- * @author: nhanph
- * @date: 3/7/2025 2025
- * @Copyright: @nhanph
+ * {@code @author:} nhanph
+ * {@code @date:} 3/7/2025 2025
+ * {@code @Copyright:} @nhanph
  */
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -25,5 +24,7 @@ public class CameraResponse {
     private double positionY;
     private String faceSource;
     private String cam3d;
-    private String camera_group;
+    @JsonProperty(value = "camera_group")
+    private String cameraGroup;
+
 }

@@ -1,6 +1,5 @@
 package nhanph.proton.enroll.service.impl;
 
-import lombok.RequiredArgsConstructor;
 import nhanph.proton.enroll.dto.CameraResponse;
 import nhanph.proton.enroll.entity.Camera;
 import nhanph.proton.enroll.mapper.CameraMapper;
@@ -16,11 +15,15 @@ import java.util.List;
  * {@code @Copyright:} @nhanph
  */
 @Service
-@RequiredArgsConstructor
 public class CameraServiceImpl implements CameraService {
 
     private final CameraRepository cameraRepository;
     private final CameraMapper cameraMapper;
+    public CameraServiceImpl (CameraRepository cameraRepository,
+                               CameraMapper cameraMapper){
+        this.cameraMapper = cameraMapper;
+        this.cameraRepository = cameraRepository;
+    }
 
     @Override
     public List<CameraResponse> getCameraList() {

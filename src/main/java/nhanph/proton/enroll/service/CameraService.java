@@ -1,7 +1,6 @@
 package nhanph.proton.enroll.service;
 
 import nhanph.proton.enroll.dto.CameraResponse;
-import nhanph.proton.enroll.entity.Camera;
 
 import java.util.List;
 

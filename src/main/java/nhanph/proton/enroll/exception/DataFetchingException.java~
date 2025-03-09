@@ -1,0 +1,4 @@
+package nhanph.proton.enroll.exception;
+
+public class DataFetchingException {
+}

@@ -1,0 +1,145 @@
+package nhanph.proton.enroll.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+import java.sql.Timestamp;
+
+/**
+ * @Package: nhanph.proton.enroll.entity
+ * {@code @author:} nhanph
+ * {@code @date:} 3/6/2025 2025
+ * {@code @Copyright:} @nhanph
+ */
+
+@Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "camera")
+public class Camera {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "camera_id")
+    private Long cameraId;
+
+    @Column(name = "camera_name")
+    private String cameraName;
+
+    @Column(name = "camera_description")
+    private String cameraDescription;
+
+    private String link;
+
+    @Column(name = "created_time")
+    private Timestamp createdTime;
+
+    private Byte status;
+
+    private Double positionX;
+
+    private Double positionY;
+
+    @Column(name = "camera_group")
+    private String cameraGroup;
+
+    @Column(name = "face_source")
+    private String faceSource;
+
+    private String cam3d;
+
+    public Long getCameraId() {
+        return cameraId;
+    }
+
+    public void setCameraId(Long cameraId) {
+        this.cameraId = cameraId;
+    }
+
+    public String getCameraName() {
+        return cameraName;
+    }
+
+    public void setCameraName(String cameraName) {
+        this.cameraName = cameraName;
+    }
+
+    public String getCameraDescription() {
+        return cameraDescription;
+    }
+
+    public void setCameraDescription(String cameraDescription) {
+        this.cameraDescription = cameraDescription;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public Timestamp getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Timestamp createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    public Double getPositionX() {
+        return positionX;
+    }
+
+    public void setPositionX(Double positionX) {
+        this.positionX = positionX;
+    }
+
+    public Double getPositionY() {
+        return positionY;
+    }
+
+    public void setPositionY(Double positionY) {
+        this.positionY = positionY;
+    }
+
+    public String getCameraGroup() {
+        return cameraGroup;
+    }
+
+    public void setCameraGroup(String cameraGroup) {
+        this.cameraGroup = cameraGroup;
+    }
+
+    public String getFaceSource() {
+        return faceSource;
+    }
+
+    public void setFaceSource(String faceSource) {
+        this.faceSource = faceSource;
+    }
+
+    public String getCam3d() {
+        return cam3d;
+    }
+
+    public void setCam3d(String cam3d) {
+        this.cam3d = cam3d;
+    }
+}
